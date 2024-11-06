@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Home page</title>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: white;
+        background-image:url('https://gobusbd.com/frontend/assets/img/bus2.jpeg');
+    }
+    table{
+        border-collapse:collapse;
+        background-color: white;
+        width:100%;
+    }
+    thead{
+        background-color: blue;
+    }
+    th,td{
+        border: 2px solid black;
+        padding:8px;
+        text-align: center;
+    }
+    .hello{
+        background-color: white;
+    }
+    form{
+    display:table-cell;
+    width:80%;
+    height: 90%;
+}
+input[type=text]{
+    width:100%;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid black;
+    box-sizing:border-box;
+}
+button{
+    background-color: red;
+    color:white;
+    padding:12px 20px;
+    margin:8px 0;
+    border:none;
+    cursor:pointer;
+    width:100%;
+}
+.container{
+    background-color: white;
+    border:3px solid black;
+    position:absolute;
+    left: 20%;
+    top: 50%;
+    width:40%;
+    height:40;
+    padding:8px;
+
+}
+</style>
+</head>
+<body>
+    <div class="hello">
+    <h1>List of Scheduled Busses</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>BUS Name</th>
+                <th>Source</th>
+                <th>Destination</th>
+                <th>Num of seats</th>
+                <th>Num of seats remaining</th>
+                <th>Price</th>
+                <th>Date</th>
+                <th>Time</th>
+                <th>Booked</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>7</td>
+                <td>deva</td>
+                <td>madurai</td>
+                <td>chennai</td>
+                <td>25</td>
+                <td>10</td>
+                <td>Rs.250</td>
+                <td>25-03-2024</td>
+                <td>7PM</td>
+                 <td>cancelled</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>charu</td>
+                <td>madurai</td>
+                <td>chennai</td>
+                <td>20</td>
+                <td>7</td>
+                <td>Rs.300</td>
+                <td>25-03-2024</td>
+                <td>7PM</td>
+                <td>Booked</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <div class="container">
+        <legend>
+        <h1>cancell Booking</h1>
+            <div class="formcontainer">
+            <form id="choose bus to book">
+                <label for="Enter Bus ID">Enter Bus ID:</label>
+                <input type="text" name="busid"required>
+                
+                <button type="submit">Cancel</button>
+            </form>
+            </div>
+        </legend>
+    </div>
+</body>
+</html>        
